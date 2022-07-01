@@ -39,11 +39,11 @@ pub mod pallet {
 	pub type Something<T> = StorageValue<_, u32>;
 
 	#[pallet::storage]
-    pub type Number<T:Config>       = StorageMap<_,Blake2_128Concat,
-                                            T::AccountId,
-                                            u32,
-                                            ValueQuery,
-                                            >;
+    	pub type Number<T:Config>       = StorageMap<_,Blake2_128Concat,
+                                            		T::AccountId,
+                                            		u32,
+                                            		ValueQuery,
+                                            		>;
 
 	// Pallets use events to inform users when important changes are made.
 	// https://docs.substrate.io/v3/runtime/events-and-errors
